@@ -17,4 +17,4 @@ def send_message():
     return jsonify({'reply': f"你說的{user_msg}，是什麼意思？"})  # 固定回傳 Hello
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
