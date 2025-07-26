@@ -2,9 +2,13 @@ from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/chatbox')
 def chat_page():
     return render_template('chat.html')
+
+@app.route('/home')
+def home_page():
+    return render_template('home.html')
 
 @app.route('/send', methods=['POST'])
 def send_message():
