@@ -12,8 +12,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #004369;
+    color: #FFFBF0;
     padding: 15px 20px;
 }
 
@@ -23,19 +23,106 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #FFFBF0;
     text-decoration: none;
 }
 
 main {
     flex: 1;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #FFFBF0;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #004369;
+    color: #FFFBF0;
     text-align: center;
     padding: 10px;
+}
+
+.main-container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intro-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.intro-box {
+  background-color: #1B7895;
+  color: #D1FEFF;
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.right-panel {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.work-card h3 {
+  color: #004369;
+  margin-bottom: 5px;
+}
+
+.work-card p {
+  border-bottom: 2px dotted #004369;
+  padding-bottom: 5px;
+}
+
+.chat-wrapper {
+  background-color: #1e7a96;  /* 你設計的藍色背景 */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+#chat-box {
+  border: 1px solid #ccc;
+  background-color: #1c708a;
+  padding: 15px;
+  height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#message {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #1c708a;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #a0dbe3;
+  border-radius: 6px;
+  cursor: pointer;
 }

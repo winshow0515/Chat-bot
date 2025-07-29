@@ -11,19 +11,40 @@
   <header>
     <h1>Winshow's Page</h1>
     <nav>
-      <a href="#">Home</a>
+      <a href="/home">Home</a>
       <a href="/chatbox">ChatBox</a>
-      <a href="#">Contact</a>
+      <a href="#">Content</a>
     </nav>
   </header>
 
   <!-- Main Content -->
   <main>
-    <h2>Welcome to the Home Page</h2>
-    <p>This is the main content area. <br/> 
-        You can put anything you like here.</p>
-    <img src="/static/images/ousa_cat_hero.png" />
+    <div class="main-container">
+      <!-- 左側內容區 -->
+      <div class="left-panel">
+        <img src="/static/images/mapart.jpg" alt="Intro Image" class="intro-img" />
+        <section class="intro-box">
+          <h2>Introduction</h2>
+          <p>
+            內文範例 內文範例 內文範例 內文範例 內文範例 內文範例 內文範例 內文範例<br/>
+            內文範例 內文範例 內文範例 內文範例 內文範例 內文範例 內文範例 內文範例<br/>
+            內文範例 內文範例 內文範例 內文範例 內文範例 內文範例
+          </p>
+        </section>
+      </div>
+
+      <!-- 右側作品連結區 -->
+      <div class="right-panel">
+        {% for i in range(6) %}
+        <div class="work-card">
+          <h3>作品連結</h3>
+          <p>介紹..................................</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
   </main>
+
 
   <!-- Footer -->
   <footer>
