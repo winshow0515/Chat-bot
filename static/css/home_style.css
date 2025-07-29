@@ -68,14 +68,6 @@ footer {
   line-height: 1.6;
 }
 
-.right-panel {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding-top: 10px;
-}
-
 .work-card h3 {
   color: #004369;
   margin-bottom: 5px;
@@ -125,4 +117,41 @@ button {
   background-color: #a0dbe3;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.project-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));  /* 每張卡片至少280px寬 */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+.project-item {
+  background-color: #1e7a96;
+  padding: 20px;
+  border-radius: 16px;
+  color: white;
+  min-height: 160px;         /* 高度拉高一些 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  /* 陰影像卡片 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+
+.project-item a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
 }
